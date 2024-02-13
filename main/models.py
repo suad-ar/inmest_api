@@ -62,3 +62,6 @@ class QueryComment(models.Model):
 
     def __str__(self):
         return f"Comment on {self.query.title} by {self.author.user.username}"
+
+
+#  fine

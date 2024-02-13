@@ -1,8 +1,8 @@
 from django.db import models
-
+from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
-class IMUser (models.Model):
+class IMUser (AbstractUser):
     USER_TYPE_CHOICES = [
         ('EIT', 'EIT'),
         ('TEACHING_FELLOW', 'Teaching Fellow'),
